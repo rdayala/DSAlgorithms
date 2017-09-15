@@ -3,7 +3,7 @@ package com.rdayala.queue;
 // Queue implementation with wrap around items.
 // kind of circular queue
 
-public class QueueWrapAround {
+public class CircularQueueX {
 
 	private int maxSize;
 	private long[] queArray;
@@ -12,7 +12,7 @@ public class QueueWrapAround {
 	private int nItems;
 
 	// --------------------------------------------------------------
-	public QueueWrapAround(int s) // constructor
+	public CircularQueueX(int s) // constructor
 	{
 		maxSize = s;
 		queArray = new long[maxSize];
@@ -72,7 +72,7 @@ public class QueueWrapAround {
 	public static void main(String[] args) throws Exception {
 
 		// queue holds 5 items
-		QueueWrapAround theQueue = new QueueWrapAround(5);
+		CircularQueueX theQueue = new CircularQueueX(5);
 
 		theQueue.insert(10); // insert 4 items
 		theQueue.insert(20);
